@@ -54,8 +54,8 @@ body {
     color: #333;
     font-size: 16px;
     font-weight: normal;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: transparent;
+    border: 1px solid transparent;
     border-radius: 5px;
 }
 
