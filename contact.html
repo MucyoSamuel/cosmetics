@@ -4,7 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Masaka Cosmetics</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff0f3;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffcbdb;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        .navlinks {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navlinks:hover {
+            color: #ff6fa9;
+        }
+
+        .contact-container {
+            background-color: #ffffff;
+            padding: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            margin-top: 50px;
+        }
+
+        .contact-title {
+            font-size: 2.5em;
+            color: #ff6fa9;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            font-size: 1.2em;
+            color: #666;
+            margin: 20px 0;
+        }
+
+        .contact-info a {
+            color: #ff6fa9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            background-color: #ffcbdb;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .footer-content {
+            color: #fff;
+            font-size: 1em;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -15,23 +91,22 @@
         <a href="contact.html" class="navlinks">Contact Us</a>
     </nav>
 
-    <!-- Contact Section -->
-    <div class="contact-main">
-        <h1 class="contact-title">Get in Touch</h1>
-        <p class="contact-description">We'd love to hear from you! Whether you have a question about our products, need assistance, or just want to share your experience, we're here to help.</p>
-        
-        <form class="contact-form">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name">
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your Email">
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Your Message"></textarea>
-
-            <button type="submit" class="contact-button">Send Message</button>
-        </form>
+    <!-- Contact Information -->
+    <div class="contact-container">
+        <h1 class="contact-title">Contact Us</h1>
+        <p class="contact-info">
+            Phone: <a href="tel:+123456789">+1 234 567 89</a>
+        </p>
+        <p class="contact-info">
+            Email: <a href="mailto:info@masakacosmetics.com">info@masakacosmetics.com</a>
+        </p>
+        <p class="contact-info">
+            Follow us on:
+            <br>
+            <a href="https://facebook.com/masakacosmetics" target="_blank">Facebook</a> |
+            <a href="https://instagram.com/masakacosmetics" target="_blank">Instagram</a> |
+            <a href="https://twitter.com/masakacosmetics" target="_blank">Twitter</a>
+        </p>
     </div>
 
     <!-- Footer -->
