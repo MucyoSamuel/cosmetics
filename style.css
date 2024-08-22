@@ -1,151 +1,153 @@
-*{
-    padding: 0px;
-    margin: 0px ;
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@400;600&display=swap');
+
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-body{
+
+/* Body Styling */
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
     width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-rows: 1fr 5fr;
-
 }
-.nav{
-    background-color: pink;
+
+/* Navigation Bar */
+.nav {
+    background-color: #f5a9b8;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     align-items: center;
+    padding: 10px 0;
 }
-.main{
-    background-image: url(background.jpg);
+
+.navlinks {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.navlinks:hover {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+/* Main Section */
+.main {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: grid;
     grid-template-columns: 1fr 5fr;
-
+    padding: 20px;
 }
-.sidebar{
+
+/* Sidebar Styling */
+.sidebar {
     display: grid;
     grid-template-rows: 1fr 4fr;
-    border-radius: 40px;
-
+    background-color: rgba(255, 192, 203, 0.8);
+    border-radius: 15px;
+    padding: 20px;
 }
-.sidebartitle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
+.sidebarheader {
+    font-family: 'Playfair Display', serif;
+    color: #d26a8d;
+    font-size: 1.8rem;
+    text-align: center;
 }
-.links{
+
+.links {
     margin: 10%;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    background-color: rgba(0,0,0,0.4);
-    justify-items: center;
-    align-items: center;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
 }
-.content{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
 
-}
-.headertitle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.slogan{
-    display: flex;
-    align-items: start;
-    justify-content: center;
-
-
-}
-.calltoact{
-    display: flex;
-    align-items: start;
-    justify-content: center;
-}
-.navlinks{
+.linkitems {
     text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
-    
-}
-.navlinks:hover{
-    text-decoration: underline;
-    font-weight: bold;
-    animation: tra 1.s ;
-}
-.sidebarheader{
-    color: rgb(169, 97, 109);
-    font-size: 1.5rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-shadow: 2px 2px pink;
-}
-.linkitems{
-    text-decoration: none;
-    color: white;
-    margin: 7px;
+    color: #333;
     font-size: 1.3rem;
     font-weight: bold;
 }
-.linkitems:hover{
-    font-weight: 800;
-    color: white;
-    text-shadow: 2px 2px rgb(91, 69, 69) , -2px -2px rgb(113, 76, 76);
-    transition: 1.5s;
-}
-.title{
-        color: pink;
-        font-size: 4rem;
-        text-shadow: 2px 2px purple , -2px -2px purple;
-}
-.sloganwords{
-        font-size: 3rem;
-        color: white;
-        text-shadow: 2px 2px purple , -2px -2px purple;
 
+.linkitems:hover {
+    color: #d26a8d;
+    transition: color 0.3s ease;
 }
-.call{
-    width: 10rem;
+
+/* Content Area */
+.content {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 20px;
+}
+
+.title {
+    color: #d26a8d;
+    font-size: 4rem;
+    text-shadow: 2px 2px 5px rgba(128, 0, 128, 0.3);
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(45deg, #f8a9b8, #ffd1dc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+.sloganwords {
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+}
+
+.calltoact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call {
+    width: 12rem;
     height: 4rem;
     border: none;
     border-radius: 2rem;
-    background-color: pink;
+    background-color: #d26a8d;
     color: white;
     font-size: 1.3rem;
-    animation: jigle 0.5s ease-in 10s ;
+    font-family: 'Quicksand', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
 }
-.call:hover{
+
+.call:hover {
+    background-color: #b94e76;
     cursor: pointer;
-    box-shadow: 1px 1px purple ,  -1px -1px purple;
 }
-.call:active{
+
+.call:active {
     cursor: wait;
-    background-color: rgb(197, 155, 162);
-}
-@keyframes tra {
-    from{
-        text-decoration: none;
-    }
-    to{
-        text-decoration: underline;
-    }
-
+    background-color: #a8446b;
 }
 
-@keyframes jigle {
-    0%{
-      rotate: 0deg;  
+/* Animations */
+@keyframes glow {
+    from {
+        text-shadow: 2px 2px 5px rgba(128, 0, 128, 0.5), -2px -2px 5px rgba(128, 0, 128, 0.5);
     }
-    50%{
-        rotate: -20deg;
+    to {
+        text-shadow: 4px 4px 20px rgba(255, 105, 180, 1), -4px -4px 20px rgba(128, 0, 128, 1);
     }
-    70%{
-        rotate: 20deg;
-    }
-    100%{
-        rotate: 0deg;
-    }
-
-    
 }
