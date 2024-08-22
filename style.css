@@ -17,7 +17,7 @@ body{
     align-items: center;
 }
 .main{
-    background-image: url(background.png);
+    background-image: url(background.jpg);
     display: grid;
     grid-template-columns: 1fr 5fr;
 
